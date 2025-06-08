@@ -22,11 +22,6 @@
                         <div class="mb-4">
                             @include('blog.admin.posts.includes.post_edit_add_col')
                         </div>
-
-                        {{-- Кнопка збереження, якщо треба можна додати тут --}}
-                        <div class="mb-4">
-                            <button type="submit" class="btn btn-primary">Зберегти</button>
-                        </div>
                     </form>
 
                     {{-- Форма видалення --}}
