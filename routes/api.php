@@ -11,3 +11,4 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('blog/posts', [PostController::class, 'index']);
+Route::get('/posts/{id}', [PostController::class, 'show']);

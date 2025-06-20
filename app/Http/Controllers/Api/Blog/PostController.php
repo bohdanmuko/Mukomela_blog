@@ -17,4 +17,15 @@ class PostController extends Controller
             'status' => 'success'
         ]);
     }
+
+    public function show($id)
+    {
+        $post = BlogPost::find($id);
+
+        if (!$post) {
+            return response()->json(['error' => 'Post not found'], 404);
+        }
+
+        return response()->json($post);
+    }
 }
